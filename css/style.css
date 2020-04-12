@@ -1,0 +1,26 @@
+.heading-primary-main {
+  display: block;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'Gotu', sans-serif;
+  letter-spacing: 0.3rem; }
+
+.heading-primary-sub {
+  display: block;
+  margin: 0.8rem;
+  font-family: 'Dancing Script', cursive; }
+
+.header {
+  height: 95vh;
+  background-color: green; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__me {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%; }

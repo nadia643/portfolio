@@ -1,0 +1,47 @@
+.heading-primary {
+    
+    &-main {
+        display: block;
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
+        text-transform: uppercase;
+        font-family: 'Gotu', sans-serif;
+        letter-spacing: 0.3rem;        
+    }
+
+    &-sub {
+        display: block;
+        margin: 0.8rem;
+        font-family: 'Dancing Script', cursive;
+        
+
+    }
+}
+
+// .heading-primary {
+//     color:$color-white;;
+//     text-transform: uppercase;
+
+//     backface-visibility: hidden; /*fixes animation jump*/
+//     margin-bottom: 60px;
+
+//     &-main {
+//         display: block;
+//         font-size: 60px;
+//         font-weight: 400;
+//         letter-spacing: 35px;
+    
+//         animation-name: moveInLeft;
+//         animation-duration: 1s;
+//         animation-timing-function: ease-out;
+//     }
+    
+//     &-sub {
+//         display: block;
+//         font-size: 20px;
+//         font-weight: 700;
+//         letter-spacing: 17.4px;
+//         animation: moveInRight 1s ease-out;
+        
+//     }
+// }

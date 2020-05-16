@@ -1,5 +1,9 @@
 @import './abstracts/variables';
 
+@import './base/_animation';
 @import './base/typography';
 
+
 @import './layout/header';
+@import './layout/projects';
+@import './layout/talents';

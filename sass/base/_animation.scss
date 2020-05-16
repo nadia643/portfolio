@@ -1,0 +1,41 @@
+@keyframes moveInLeft {
+    /* 0% is at the start and 100% is at the end of the animation. Can put diff %s for diff stages in between */
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* starts at the left */
+    }
+    80% {
+        transform: translateX(35px); /* then goes a bit to the right with 20px */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+    80% {
+        transform: translateX(-35px); 
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+

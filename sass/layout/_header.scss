@@ -5,27 +5,37 @@
 
     display: grid;
     grid-template-rows: 500px 200px 900px;
+    row-gap: 3rem;
     
 
     
 }
 
-.header__text-box{
-    background-image: '/images/header-background-code';
+.header {
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-gradient-top, 0.80),
+        rgba($color-gradient-bottom, 0.80)),
+        url(/images/header-background-code.jpg);
+    background-size: cover;
+    background-position: top;
     display: grid;
     align-items: center;
-    justify-items: center;
+
+    -webkit-clip-pth: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    @supports(clip-path: polygon(0 0)) or (--webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-pth: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    &__text-box {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
-.talents {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
 
-.projects {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
+

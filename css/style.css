@@ -1,35 +1,108 @@
-.heading-primary-main {
-  display: block;
-  margin-bottom: 0.3rem;
-  margin-top: 0.3rem;
-  text-transform: uppercase;
-  font-family: 'Gotu', sans-serif;
-  letter-spacing: 0.3rem; }
+@keyframes moveInLeft {
+  /* 0% is at the start and 100% is at the end of the animation. Can put diff %s for diff stages in between */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    /* starts at the left */ }
+  80% {
+    transform: translateX(35px);
+    /* then goes a bit to the right with 20px */ }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
-.heading-primary-sub {
-  display: block;
-  margin: 0.8rem;
-  font-family: 'Dancing Script', cursive; }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-35px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.heading-primary {
+  display: grid;
+  justify-items: center;
+  color: white; }
+  .heading-primary-main {
+    text-transform: uppercase;
+    font-family: 'Gotu', sans-serif;
+    letter-spacing: 0.3rem;
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    align-items: center;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
 
 .container {
   width: 95vw;
   margin: 25px auto;
   display: grid;
-  grid-template-rows: 500px 200px 900px; }
+  grid-template-rows: 500px 200px 900px;
+  row-gap: 3rem; }
 
-.header__text-box {
-  background-image: '/images/header-background-code';
+.header {
+  background-image: linear-gradient(to right bottom, rgba(174, 232, 245, 0.8), rgba(200, 188, 198, 0.8)), url(/images/header-background-code.jpg);
+  background-size: cover;
+  background-position: top;
   display: grid;
   align-items: center;
-  justify-items: center; }
-
-.talents {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; }
+  -webkit-clip-pth: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  @supports (clip-path: polygon(0 0)) or (--webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-pth: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); } }
+  .header__text-box {
+    display: grid;
+    align-items: center;
+    justify-items: center; }
 
 .projects {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 0.3fr) repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   justify-items: center; }
+
+.header-skewed {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  display: grid;
+  align-items: center; }
+
+.proj {
+  background-color: yellowgreen;
+  width: 100%; }
+
+.project {
+  grid-column: 1 / -1; }
+  .project--up {
+    grid-row: 2 / span 1; }
+  .project--down {
+    grid-row: 3 / span 1; }
+
+.talents {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center; }
+
+.talent {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }

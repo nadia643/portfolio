@@ -1,32 +1,31 @@
-.header {
-    height: 95vh;
-    background-color: green;
-    // background-image: linear-gradient(
-    //     to right bottom, 
-    //     rgba($color-primary-light, 0.80),
-    //     rgba($color-primary-dark, 0.80)),
-    //     url(../../images/header-background.png);
-    // background-size: cover;
-    // background-position: top;
-    // position: relative;
-    // -webkit-clip-pth: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+.container {
+    // background-color: lightgrey;
+    width: 95vw;
+    margin: 25px auto;
 
-    &__text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        text-align: center;
-    }
+    display: grid;
+    grid-template-rows: 500px 200px 900px;
+    
 
-    &__me {
-        width: 30%;
-        height: 30%;
-        border-radius: 50%;
-    }
+    
 }
 
-.fa-laptop-code {
+.header__text-box{
+    background-image: '/images/header-background-code';
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
 
+.talents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }

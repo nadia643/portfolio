@@ -1,4 +1,4 @@
-.heading-primary {
+.header-primary {
     display: grid;
     justify-items: center;
     color: white;
@@ -26,5 +26,30 @@
 }
 
 .header-skewed {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    display: grid;
+    align-items: end;
+    color: rgb(194, 183, 183);
+}
+.header-projects {
+    text-transform: uppercase;
+    color: grey;
+    text-align: right;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 85%;
     
+
+    &--main {
+        
+    }
+
+    &--sub { 
+        grid-row: 2 / -1;
+        border-top: 1px solid grey;
+        padding: 10px;
+       
+    }
 }

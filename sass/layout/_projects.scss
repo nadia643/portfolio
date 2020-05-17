@@ -3,6 +3,9 @@
     grid-template-rows: repeat(1, 0.3fr) repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    
 }
 
 .header-skewed {
@@ -12,18 +15,46 @@
     align-items: center;
 }
 
-.proj {
-    background-color: yellowgreen;
-    width: 100%;
-}
-
 .project {
-    grid-column: 1 / -1;
-    &--up {
-        grid-row: 2 / span 1;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    width: 80%;
+    position: relative;
+
+    &__side {
+        height: 100%;
+        width: 100%;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        --webkit-backface-visibility: hidden;
+
+        &--front {
+            background-image: linear-gradient(
+                to bottom right, 
+                $color-gradient-cards-top, 
+                $color-gradient-cards-bottom
+                );
+            
+        
+        }
+
+        &--back {
+            // already is at 180deg as we start; only the front rotates on transform
+            transform: rotateY(180deg);
+        }
+
+    }
+    
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
     }
 
-    &--down {
-        grid-row: 3 / span 1;
+    &:hover &__side--back {
+        transform: rotateY(0);
     }
+
 }

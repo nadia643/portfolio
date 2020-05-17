@@ -14,8 +14,8 @@
 .header {
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-gradient-top, 0.80),
-        rgba($color-gradient-bottom, 0.80)),
+        rgba($color-gradient-header-top, 0.80),
+        rgba($color-gradient-header-bottom, 0.80)),
         url(/images/header-background-code.jpg);
     background-size: cover;
     background-position: top;

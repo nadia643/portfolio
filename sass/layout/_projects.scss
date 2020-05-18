@@ -49,13 +49,26 @@
             // already is at 180deg as we start; only the front rotates on transform
             transform: rotateY(180deg);
             background-color: lightgrey;
+            font-size: 0.9rem;
+            text-align: center;
+
+    
 
             display: grid;
             grid-template-rows: 1fr 1fr;
+            // grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-items: center; 
+            
+            &--top {
+                grid-row: 1 / span 1;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
 
             &--bottom {
+                grid-row: 2 / -1;
                 display: grid;
                 grid-template-rows: 1fr 4fr 1fr;
                 grid-template-columns: 5% 90% 5%;
@@ -81,4 +94,3 @@
     }
 
 }
-

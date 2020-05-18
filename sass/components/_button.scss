@@ -2,7 +2,7 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 25px 20px;
     border-radius: 100px;
     transition: all .2s;
 }
@@ -19,5 +19,6 @@
 .btn-yellow {
     background-color: $btn-yellow;
     color: grey;
+    width: 40%;
     
 }

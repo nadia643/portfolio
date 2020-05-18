@@ -73,7 +73,7 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 25px 20px;
   border-radius: 100px;
   transition: all .2s; }
 
@@ -86,13 +86,18 @@
 
 .btn-yellow {
   background-color: #f5fbb4;
-  color: grey; }
+  color: grey;
+  width: 40%; }
+
+.about-me-text {
+  color: grey;
+  font-size: 1.8rem; }
 
 .container {
   width: 95vw;
   margin: 25px auto;
   display: grid;
-  grid-template-rows: 500px 200px 1200px;
+  grid-template-rows: 500px 80px 200px 1200px;
   row-gap: 3rem; }
 
 .header {
@@ -145,11 +150,19 @@
       background-image: linear-gradient(to top left, #aec5f5, #bcc6c8);
       transform: rotateY(180deg);
       background-color: lightgrey;
+      font-size: 0.9rem;
+      text-align: center;
       display: grid;
       grid-template-rows: 1fr 1fr;
       align-items: center;
       justify-items: center; }
+      .project__side--back--top {
+        grid-row: 1 / span 1;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; }
       .project__side--back--bottom {
+        grid-row: 2 / -1;
         display: grid;
         grid-template-rows: 1fr 4fr 1fr;
         grid-template-columns: 5% 90% 5%; }
@@ -167,7 +180,8 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 4rem; }
 
 .talent {
   animation-name: moveInBottom;

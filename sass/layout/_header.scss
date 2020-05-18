@@ -1,14 +1,11 @@
 .container {
-    // background-color: lightgrey;
     width: 95vw;
     margin: 25px auto;
 
     display: grid;
-    grid-template-rows: 500px 200px 1200px;
+    grid-template-rows: 500px 80px 200px 1200px;
     row-gap: 3rem;
-    
-
-    
+ 
 }
 
 .header {

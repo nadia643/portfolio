@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
-    align-items: center;
+    align-items: center; 
 
 }
 
@@ -10,4 +10,12 @@
     animation-name: moveInBottom;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    width: 70%;
+    height: 70%;
+
+    &--nodejs {
+        width: 100%;
+    }
 }
+
+

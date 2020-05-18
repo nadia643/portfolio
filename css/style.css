@@ -172,4 +172,8 @@
 .talent {
   animation-name: moveInBottom;
   animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  animation-timing-function: ease-out;
+  width: 70%;
+  height: 70%; }
+  .talent--nodejs {
+    width: 100%; }

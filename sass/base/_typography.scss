@@ -3,6 +3,8 @@
     justify-items: center;
     color: white;
 
+    
+
     &-main {
         text-transform: uppercase;
         font-family: 'Gotu', sans-serif;
@@ -33,15 +35,20 @@
     color: rgb(194, 183, 183);
 }
 .header-projects {
+    font-size: 24px;
     text-transform: uppercase;
     color: grey;
     text-align: right;
-        position: absolute;
-        top: 10%;
-        right: 5%;
-        width: 85%;
-    
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 85%;
 
+    @include respond-tablet-landscape {
+        font-size: 18px;
+    }
+
+        
     &--main {
         
     }
@@ -51,5 +58,19 @@
         border-top: 1px solid grey;
         padding: 10px;
        
+    }
+}
+
+
+.about-me-text {
+    color: grey;
+    font-size: 1.8rem;
+
+    @include respond-tablet-landscape {
+        font-size: 1.4rem;
+    }
+
+    @include respond-tablet-portrait {
+        font-size: 1.2rem;
     }
 }

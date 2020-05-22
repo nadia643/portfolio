@@ -5,6 +5,12 @@
     align-items: center;
     margin-top: 4rem; 
 
+    @include respond-phone {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2.4rem;  
+    }
+
 }
 
 .talent {
@@ -13,6 +19,11 @@
     animation-timing-function: ease-out;
     width: 70%;
     height: 70%;
+
+    @include respond-phone {
+        width: 60%;
+        height: 70%;
+    }
 
     &--nodejs {
         width: 100%;

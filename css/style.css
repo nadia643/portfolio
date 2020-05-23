@@ -57,7 +57,7 @@
   color: #c2b7b7; }
 
 .header-projects {
-  font-size: 24px;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: grey;
   text-align: right;
@@ -67,11 +67,24 @@
   width: 85%; }
   @media (max-width: 1200px) {
     .header-projects {
-      font-size: 18px; } }
+      font-size: 1.6rem; } }
+  @media (max-width: 900px) {
+    .header-projects {
+      font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .header-projects {
+      font-size: 1.1rem; } }
+  @media (max-width: 460px) {
+    .header-projects {
+      font-size: 0.9rem; } }
   .header-projects--sub {
     grid-row: 2 / -1;
     border-top: 1px solid grey;
+    border-width: 80%;
     padding: 10px; }
+    @media (max-width: 460px) {
+      .header-projects--sub {
+        border-top: none; } }
 
 .about-me-text {
   color: grey;
@@ -82,6 +95,9 @@
   @media (max-width: 900px) {
     .about-me-text {
       font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .about-me-text {
+      font-size: 1rem; } }
 
 .btn:link,
 .btn:visited {

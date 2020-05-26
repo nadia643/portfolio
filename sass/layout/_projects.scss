@@ -70,14 +70,18 @@
             font-size: 0.9rem;
             text-align: center;
 
+            @media (pointer: coarse) {
+                transform: rotateY(0);
+              }
     
 
             display: grid;
             grid-template-rows: 1fr 1fr;
             // grid-template-columns: 1fr 4fr 1fr;
             align-items: center;
-            justify-items: center; 
-            
+            justify-items: center;
+
+
             &--top {
                 grid-row: 1 / span 1;
                 display: grid;
@@ -121,6 +125,8 @@
 
     &:hover &__side--back {
         transform: rotateY(0);
+
     }
+
 
 }

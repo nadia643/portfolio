@@ -1,0 +1,35 @@
+.contact {
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-gradient-header-top, 0.80),
+    rgba($color-gradient-header-bottom, 0.80));
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    color: grey;
+    justify-items: center;
+    align-items: center;
+
+    @include respond-tablet-portrait {
+      grid-template-columns: 10% 80% 10%;
+  }
+
+    @include respond-phone-460 {
+      grid-template-columns: 2% 96% 2%;
+  }
+
+    &-icon {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+}
+
+ul {
+  grid-column: 2 / span 1;
+  font-size: 1.2rem;
+
+  @include respond-tablet-portrait {
+    font-size: 0.9rem;
+}
+}
+

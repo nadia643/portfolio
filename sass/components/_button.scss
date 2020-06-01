@@ -6,9 +6,19 @@
     border-radius: 100px;
     transition: all .2s;
 
+    @include respond-tablet-portrait {
+        padding: 10px 1px;
+        font-size: .8rem;
+    }
+
     @include respond-phone {
         padding: 5px 5px;
-        font-size: 0.8rem;
+        margin: 5px;
+        font-size: 0.7rem;
+    }
+
+    @include respond-phone-460 {
+        font-size: 0.6rem;
     }
     
     
@@ -31,8 +41,8 @@
 
     @include respond-phone {
         font-size: 0.8rem;
-        
     }
+
 
 
     &--site {
@@ -40,13 +50,12 @@
         grid-row: 2 / span 1;
 
         @include respond-tablet-portrait {
-            grid-row: 2 / span 1;
+            grid-row: 1 / span 1;
             grid-column: 2 / span 1;
         }
 
         @include respond-phone {
-            grid-column: 1 / span 1;
-            
+            grid-column: 2 / 3;
         }
 
     }
@@ -57,10 +66,11 @@
 
         @include respond-tablet-portrait {
             grid-row: 2 / span 1;
-            grid-column: 4 / span 1;
+            grid-column: 2 / span 1;
+            // grid-column: 4 / span 1;
         }
         @include respond-phone {
-            grid-column: 2 / -1;
+            grid-column: 2 / 3;
         }
 
 
@@ -69,13 +79,12 @@
             grid-row: 3 / span 1;
 
             @include respond-tablet-portrait {
-                grid-column: 3 / span 2;
+                grid-column: 2 / span 1;
             }
 
             @include respond-phone {
-                grid-row: 2 / 3;
-                grid-column: 1 / span 2;
-                width: 50%;
+                grid-column: 2 / span 1;
+                
             }
         }
 

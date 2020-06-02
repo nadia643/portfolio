@@ -240,7 +240,7 @@ ul {
       clip-path: polygon(100% 0%, 0% 10%, 0% 100%, 100% 100%); } }
   @media (max-width: 900px) {
     .projects {
-      grid-template-rows: repeat(1, 0.6fr) repeat(3, 1.3fr) repeat(1, 0.2fr);
+      grid-template-rows: repeat(1, 0.6fr) repeat(4, 1.3fr) repeat(1, 0.2fr);
       grid-template-columns: repeat(2, 1fr);
       -webkit-clip-pth: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
       clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%); } }

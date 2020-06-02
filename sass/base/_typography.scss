@@ -13,7 +13,11 @@
 
         animation-name: moveInLeft;
         animation-duration: 2s;
-        animation-timing-function: ease-out;     
+        animation-timing-function: ease-out;    
+        
+        @include respond-phone-360 {
+            font-size: 1.5rem;
+        }
     }
 
     &-sub {  
@@ -23,7 +27,9 @@
 
         animation-name: moveInRight;
         animation-duration: 2s;
-        animation-timing-function: ease-out;  
+        animation-timing-function: ease-out; 
+        
+        font-size: 1.4rem;
     }
 }
 
@@ -62,11 +68,8 @@
 
         
     &--main {
-        
-        // @include respond-phone-460 {
-        //     font-size: 1rem;
-        // }
-    
+
+       
     }
 
     &--sub { 

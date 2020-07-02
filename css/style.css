@@ -103,6 +103,14 @@
     .about-me-text {
       font-size: 1rem; } }
 
+.star {
+  color: #f5f58c;
+  margin-top: 58%;
+  margin-left: 75%; }
+  @media (max-width: 600px) {
+    .star {
+      margin-left: 60%; } }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -205,6 +213,9 @@ ul {
   @media (max-width: 600px) {
     .container {
       row-gap: 0rem; } }
+  @media (max-width: 900px) {
+    .container {
+      grid-template-rows: 500px 80px 200px 2400px 250px; } }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(174, 232, 245, 0.8), rgba(200, 188, 198, 0.8)), url(/images/header-background-code.jpg);
@@ -244,7 +255,7 @@ ul {
       clip-path: polygon(100% 0%, 0% 10%, 0% 100%, 100% 100%); } }
   @media (max-width: 900px) {
     .projects {
-      grid-template-rows: repeat(1, 0.6fr) repeat(4, 1.3fr) repeat(1, 0.2fr);
+      grid-template-rows: repeat(1, 0.6fr) repeat(5, 1.3fr) repeat(1, 0.2fr);
       grid-template-columns: repeat(2, 1fr);
       -webkit-clip-pth: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
       clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%); } }

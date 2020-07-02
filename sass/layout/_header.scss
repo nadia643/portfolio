@@ -9,6 +9,10 @@
     @include respond-phone {
         row-gap: 0rem;
     }
+
+    @include respond-tablet-portrait {
+        grid-template-rows: 500px 80px 200px 2400px 250px;
+    }
  
 }
 
